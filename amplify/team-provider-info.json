@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplify3a2c0d00db814-staging-161818-authRole",
+      "UnauthRoleArn": "arn:aws:iam::681773937819:role/amplify-amplify3a2c0d00db814-staging-161818-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::681773937819:role/amplify-amplify3a2c0d00db814-staging-161818-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-amplify3a2c0d00db814-staging-161818-deployment",
+      "UnauthRoleName": "amplify-amplify3a2c0d00db814-staging-161818-unauthRole",
+      "StackName": "amplify-amplify3a2c0d00db814-staging-161818",
+      "StackId": "arn:aws:cloudformation:us-east-1:681773937819:stack/amplify-amplify3a2c0d00db814-staging-161818/a12acd90-e79e-11ee-9f2e-0e38439b845b",
+      "AmplifyAppId": "ddwzwu24pwroi"
+    },
+    "categories": {
+      "auth": {
+        "sportappb3a0434b": {}
+      }
+    }
+  }
+}
