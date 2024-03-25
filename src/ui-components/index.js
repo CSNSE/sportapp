@@ -6,4 +6,6 @@
 
 export { default as NoteCreateForm } from "./NoteCreateForm";
 export { default as NoteUpdateForm } from "./NoteUpdateForm";
+export { default as SportCreateForm } from "./SportCreateForm";
+export { default as SportUpdateForm } from "./SportUpdateForm";
 export { default as studioTheme } from "./studioTheme";
