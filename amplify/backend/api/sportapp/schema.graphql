@@ -1,3 +1,10 @@
+type Team @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  image: String
+  coach: String
+}
+
 type Sport @model @auth(rules: [{allow: public}]) {
   id: ID!
   name: String

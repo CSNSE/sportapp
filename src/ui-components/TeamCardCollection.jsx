@@ -6,7 +6,7 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { listSports } from "../graphql/queries";
+import { listTeams } from "../graphql/queries";
 import TeamCard from "./TeamCard";
 import { getOverrideProps } from "./utils";
 import { Collection, Pagination, Placeholder } from "@aws-amplify/ui-react";
@@ -55,10 +55,10 @@ export default function TeamCardCollection(props) {
       }
       const result = (
         await client.graphql({
-          query: listSports.replaceAll("__typename", ""),
+          query: listTeams.replaceAll("__typename", ""),
           variables,
         })
-      ).data.listSports;
+      ).data.listTeams;
       newCache.push(...result.items);
       newNext = result.nextToken;
     }
@@ -80,9 +80,12 @@ export default function TeamCardCollection(props) {
   return (
     <div>
       <Collection
-        type="list"
-        direction="column"
-        justifyContent="left"
+        type="grid"
+        searchPlaceholder="Search..."
+        templateColumns="1fr 1fr 1fr"
+        autoFlow="row"
+        alignItems="stretch"
+        justifyContent="stretch"
         itemsPerPage={pageSize}
         isPaginated={!isApiPagination && isPaginated}
         items={itemsProp || (loading ? new Array(pageSize).fill({}) : items)}
@@ -95,6 +98,9 @@ export default function TeamCardCollection(props) {
           }
           return (
             <TeamCard
+              height="auto"
+              width="auto"
+              margin="10px 10px 10px 10px"
               key={item.id}
               {...(overrideItems && overrideItems({ item, index }))}
             ></TeamCard>
