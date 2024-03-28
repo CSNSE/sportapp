@@ -17,7 +17,6 @@ class App extends Component {
         <Route exact path='/new' element= {<div><NewSport/></div>} />
         <Route exact path='/edit/:cid' element= {<div><EditSport/></div>} />
       </Routes>
-      
     </header></div>
     );
 }

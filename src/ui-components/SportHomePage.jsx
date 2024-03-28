@@ -16,7 +16,7 @@ export default function SportHomePage(props) {
   });
   const buttonFourTwoTwoTwoOneThreeZeroSixOnClick = useNavigateAction({
     type: "url",
-    url: "/teams",
+    url: "/team",
   });
   return (
     <View
