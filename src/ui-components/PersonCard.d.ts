@@ -5,8 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
-import { SportNavBarProps } from "./SportNavBar";
-import { FlexProps } from "@aws-amplify/ui-react";
+import { FlexProps, TextProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -20,7 +19,12 @@ export declare type Variant = {
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type PersonCardOverridesProps = {
     PersonCard?: PrimitiveOverrideProps<FlexProps>;
-    SportNavBar?: SportNavBarProps;
+    Logo?: PrimitiveOverrideProps<FlexProps>;
+    Name?: PrimitiveOverrideProps<TextProps>;
+    "Frame 321"?: PrimitiveOverrideProps<FlexProps>;
+    Class?: PrimitiveOverrideProps<TextProps>;
+    "Frame 322"?: PrimitiveOverrideProps<FlexProps>;
+    Position?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;
 export declare type PersonCardProps = React.PropsWithChildren<Partial<FlexProps> & {
     overrides?: PersonCardOverridesProps | undefined | null;

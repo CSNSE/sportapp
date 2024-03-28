@@ -21,7 +21,7 @@ export default function UIEditSport(props) {
   return (
     <View
       width="640px"
-      height="1010px"
+      height="1517px"
       display="block"
       gap="unset"
       alignItems="unset"
@@ -36,7 +36,7 @@ export default function UIEditSport(props) {
         gap="24px"
         direction="column"
         width="640px"
-        height="1010px"
+        height="1517px"
         justifyContent="flex-start"
         alignItems="flex-start"
         position="absolute"
@@ -127,7 +127,7 @@ export default function UIEditSport(props) {
         ></Divider>
         <View
           width="unset"
-          height="797px"
+          height="1292px"
           display="block"
           gap="unset"
           alignItems="unset"
@@ -169,7 +169,7 @@ export default function UIEditSport(props) {
           <TextField
             width="272px"
             height="72px"
-            label="Sport"
+            label="Height"
             position="absolute"
             top="75px"
             left="24px"
@@ -183,7 +183,7 @@ export default function UIEditSport(props) {
           <TextField
             width="272px"
             height="72px"
-            label="Position"
+            label="Weight"
             position="absolute"
             top="75px"
             left="320px"
@@ -197,7 +197,7 @@ export default function UIEditSport(props) {
           <TextField
             width="272px"
             height="72px"
-            label="Height "
+            label="Email"
             position="absolute"
             top="155px"
             left="24px"
@@ -211,7 +211,7 @@ export default function UIEditSport(props) {
           <TextField
             width="272px"
             height="72px"
-            label="Weight"
+            label="Phone Number"
             position="absolute"
             top="155px"
             left="320px"
@@ -224,8 +224,8 @@ export default function UIEditSport(props) {
           ></TextField>
           <TextField
             width="272px"
-            height="72px"
-            label="Team/Club Name"
+            height="unset"
+            label="GPA"
             position="absolute"
             top="235px"
             left="24px"
@@ -239,7 +239,7 @@ export default function UIEditSport(props) {
           <TextField
             width="272px"
             height="72px"
-            label="Highlight Video Link"
+            label="Class Rank"
             position="absolute"
             top="235px"
             left="320px"
@@ -253,7 +253,7 @@ export default function UIEditSport(props) {
           <TextField
             width="272px"
             height="72px"
-            label="Parent Name"
+            label="SAT Score"
             position="absolute"
             top="315px"
             left="24px"
@@ -267,7 +267,7 @@ export default function UIEditSport(props) {
           <TextField
             width="272px"
             height="unset"
-            label="Parent Email"
+            label="ACT Score"
             position="absolute"
             top="315px"
             left="320px"
@@ -281,7 +281,7 @@ export default function UIEditSport(props) {
           <TextField
             width="272px"
             height="unset"
-            label="Parent Phone Number"
+            label="AP Classes"
             position="absolute"
             top="395px"
             left="24px"
@@ -309,7 +309,7 @@ export default function UIEditSport(props) {
           <TextField
             width="272px"
             height="unset"
-            label="Coach Email"
+            label="Coach Phone Number"
             position="absolute"
             top="475px"
             left="24px"
@@ -323,7 +323,7 @@ export default function UIEditSport(props) {
           <TextField
             width="272px"
             height="unset"
-            label="Coach Phone Number"
+            label="Coach Email"
             position="absolute"
             top="475px"
             left="320px"
@@ -337,7 +337,7 @@ export default function UIEditSport(props) {
           <TextField
             width="272px"
             height="unset"
-            label="GPA"
+            label="Parent(s) Name"
             position="absolute"
             top="555px"
             left="24px"
@@ -351,7 +351,217 @@ export default function UIEditSport(props) {
           <TextField
             width="272px"
             height="unset"
-            label="SAT/ACT Score"
+            label="Address"
+            position="absolute"
+            top="635px"
+            left="320px"
+            placeholder=""
+            size="default"
+            isDisabled={false}
+            labelHidden={false}
+            variation="default"
+            {...getOverrideProps(overrides, "TextField4222567")}
+          ></TextField>
+          <TextField
+            width="272px"
+            height="unset"
+            label="Team"
+            position="absolute"
+            top="715px"
+            left="320px"
+            placeholder=""
+            size="default"
+            isDisabled={false}
+            labelHidden={false}
+            variation="default"
+            {...getOverrideProps(overrides, "TextField4222574")}
+          ></TextField>
+          <TextField
+            width="272px"
+            height="unset"
+            label="Sport"
+            position="absolute"
+            top="715px"
+            left="24px"
+            placeholder=""
+            size="default"
+            isDisabled={false}
+            labelHidden={false}
+            variation="default"
+            {...getOverrideProps(overrides, "TextField4222581")}
+          ></TextField>
+          <TextField
+            width="272px"
+            height="unset"
+            label="Highlight Link"
+            position="absolute"
+            top="795px"
+            left="320px"
+            placeholder=""
+            size="default"
+            isDisabled={false}
+            labelHidden={false}
+            variation="default"
+            {...getOverrideProps(overrides, "TextField4222588")}
+          ></TextField>
+          <TextField
+            width="272px"
+            height="unset"
+            label="Position"
+            position="absolute"
+            top="795px"
+            left="24px"
+            placeholder=""
+            size="default"
+            isDisabled={false}
+            labelHidden={false}
+            variation="default"
+            {...getOverrideProps(overrides, "TextField4222595")}
+          ></TextField>
+          <TextField
+            width="272px"
+            height="unset"
+            label="Jersey #"
+            position="absolute"
+            top="875px"
+            left="24px"
+            placeholder=""
+            size="default"
+            isDisabled={false}
+            labelHidden={false}
+            variation="default"
+            {...getOverrideProps(overrides, "TextField4222602")}
+          ></TextField>
+          <TextField
+            width="272px"
+            height="unset"
+            label="Stat 1"
+            position="absolute"
+            top="875px"
+            left="320px"
+            placeholder=""
+            size="default"
+            isDisabled={false}
+            labelHidden={false}
+            variation="default"
+            {...getOverrideProps(overrides, "TextField4222609")}
+          ></TextField>
+          <TextField
+            width="272px"
+            height="unset"
+            label="Stat 2"
+            position="absolute"
+            top="955px"
+            left="24px"
+            placeholder=""
+            size="default"
+            isDisabled={false}
+            labelHidden={false}
+            variation="default"
+            {...getOverrideProps(overrides, "TextField4222616")}
+          ></TextField>
+          <TextField
+            width="272px"
+            height="unset"
+            label="Stat 3"
+            position="absolute"
+            top="955px"
+            left="320px"
+            placeholder=""
+            size="default"
+            isDisabled={false}
+            labelHidden={false}
+            variation="default"
+            {...getOverrideProps(overrides, "TextField4222623")}
+          ></TextField>
+          <TextField
+            width="272px"
+            height="unset"
+            label="Stat 4"
+            position="absolute"
+            top="1035px"
+            left="24px"
+            placeholder=""
+            size="default"
+            isDisabled={false}
+            labelHidden={false}
+            variation="default"
+            {...getOverrideProps(overrides, "TextField4222630")}
+          ></TextField>
+          <TextField
+            width="272px"
+            height="unset"
+            label="Stat 6"
+            position="absolute"
+            top="1115px"
+            left="24px"
+            placeholder=""
+            size="default"
+            isDisabled={false}
+            labelHidden={false}
+            variation="default"
+            {...getOverrideProps(overrides, "TextField4222644")}
+          ></TextField>
+          <TextField
+            width="272px"
+            height="unset"
+            label="Volunteering"
+            position="absolute"
+            top="1115px"
+            left="320px"
+            placeholder=""
+            size="default"
+            isDisabled={false}
+            labelHidden={false}
+            variation="default"
+            {...getOverrideProps(overrides, "TextField4222651")}
+          ></TextField>
+          <TextField
+            width="272px"
+            height="unset"
+            label="Hobbies"
+            position="absolute"
+            top="1195px"
+            left="24px"
+            placeholder=""
+            size="default"
+            isDisabled={false}
+            labelHidden={false}
+            variation="default"
+            {...getOverrideProps(overrides, "TextField4222658")}
+          ></TextField>
+          <TextField
+            width="272px"
+            height="unset"
+            label="Other Sports"
+            position="absolute"
+            top="1195px"
+            left="320px"
+            placeholder=""
+            size="default"
+            isDisabled={false}
+            labelHidden={false}
+            variation="default"
+            {...getOverrideProps(overrides, "TextField4222665")}
+          ></TextField>
+          <TextField
+            width="272px"
+            height="unset"
+            label="Stat 5"
+            position="absolute"
+            top="1035px"
+            left="320px"
+            placeholder=""
+            size="default"
+            isDisabled={false}
+            labelHidden={false}
+            variation="default"
+            {...getOverrideProps(overrides, "TextField4222637")}
+          ></TextField>
+          <TextField
+            width="272px"
+            height="unset"
+            label="Parent Phone Number"
             position="absolute"
             top="555px"
             left="320px"
@@ -365,17 +575,16 @@ export default function UIEditSport(props) {
           <TextField
             width="272px"
             height="unset"
-            label="Profile Picture"
-            alignItems="center"
+            label="Parent(s) Email"
             position="absolute"
-            top="649px"
-            left="176px"
+            top="635px"
+            left="24px"
             placeholder=""
             size="default"
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            {...getOverrideProps(overrides, "TextField41702599")}
+            {...getOverrideProps(overrides, "TextField4222560")}
           ></TextField>
         </View>
         <Divider

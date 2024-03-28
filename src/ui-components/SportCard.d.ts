@@ -43,6 +43,7 @@ export declare type SportCardOverridesProps = {
     Sport?: PrimitiveOverrideProps<TextProps>;
     Team?: PrimitiveOverrideProps<TextProps>;
     Position?: PrimitiveOverrideProps<TextProps>;
+    "Highlight Link"?: PrimitiveOverrideProps<TextProps>;
     Jersey?: PrimitiveOverrideProps<TextProps>;
     "Card Area4201411"?: PrimitiveOverrideProps<FlexProps>;
     "Text Group4201412"?: PrimitiveOverrideProps<FlexProps>;

@@ -486,6 +486,29 @@ export default function SportCard(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
+                children="Highlight Link"
+                {...getOverrideProps(overrides, "Highlight Link")}
+              ></Text>
+              <Text
+                fontFamily="Inter"
+                fontSize="20px"
+                fontWeight="400"
+                color="rgba(13,26,38,1)"
+                lineHeight="24px"
+                textAlign="center"
+                display="block"
+                direction="column"
+                justifyContent="unset"
+                letterSpacing="0.05px"
+                width="unset"
+                height="unset"
+                gap="unset"
+                alignItems="unset"
+                shrink="0"
+                alignSelf="stretch"
+                position="relative"
+                padding="0px 0px 0px 0px"
+                whiteSpace="pre-wrap"
                 children="Jersey"
                 {...getOverrideProps(overrides, "Jersey")}
               ></Text>
@@ -499,7 +522,7 @@ export default function SportCard(props) {
             justifyContent="flex-start"
             alignItems="flex-start"
             position="absolute"
-            top="447px"
+            top="466px"
             left="0px"
             padding="16px 16px 16px 16px"
             {...getOverrideProps(overrides, "Card Area4201411")}
@@ -687,7 +710,7 @@ export default function SportCard(props) {
             justifyContent="flex-start"
             alignItems="flex-start"
             position="absolute"
-            top="697px"
+            top="719px"
             left="0px"
             padding="16px 16px 16px 16px"
             {...getOverrideProps(overrides, "Card Area4216482")}

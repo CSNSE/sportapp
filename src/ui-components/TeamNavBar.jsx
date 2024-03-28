@@ -8,7 +8,7 @@
 import * as React from "react";
 import { getOverrideProps } from "./utils";
 import { Button, Flex, Text } from "@aws-amplify/ui-react";
-export default function SportNavBar(props) {
+export default function TeamNavBar(props) {
   const { overrides, ...rest } = props;
   return (
     <Flex
@@ -21,7 +21,7 @@ export default function SportNavBar(props) {
       position="relative"
       padding="24px 32px 24px 23px"
       backgroundColor="rgba(255,255,255,1)"
-      {...getOverrideProps(overrides, "SportNavBar")}
+      {...getOverrideProps(overrides, "TeamNavBar")}
       {...rest}
     >
       <Flex
@@ -105,7 +105,7 @@ export default function SportNavBar(props) {
         size="default"
         isDisabled={false}
         variation="default"
-        children="Add Team"
+        children="Add Player"
         {...getOverrideProps(overrides, "Button")}
       ></Button>
     </Flex>

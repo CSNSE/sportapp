@@ -44,6 +44,7 @@ export default function SportCreateForm(props) {
     sport: "",
     team: "",
     position: "",
+    highlight: "",
     jersey: "",
     stat1: "",
     stat2: "",
@@ -80,6 +81,7 @@ export default function SportCreateForm(props) {
   const [sport, setSport] = React.useState(initialValues.sport);
   const [team, setTeam] = React.useState(initialValues.team);
   const [position, setPosition] = React.useState(initialValues.position);
+  const [highlight, setHighlight] = React.useState(initialValues.highlight);
   const [jersey, setJersey] = React.useState(initialValues.jersey);
   const [stat1, setStat1] = React.useState(initialValues.stat1);
   const [stat2, setStat2] = React.useState(initialValues.stat2);
@@ -113,6 +115,7 @@ export default function SportCreateForm(props) {
     setSport(initialValues.sport);
     setTeam(initialValues.team);
     setPosition(initialValues.position);
+    setHighlight(initialValues.highlight);
     setJersey(initialValues.jersey);
     setStat1(initialValues.stat1);
     setStat2(initialValues.stat2);
@@ -147,6 +150,7 @@ export default function SportCreateForm(props) {
     sport: [],
     team: [],
     position: [],
+    highlight: [],
     jersey: [],
     stat1: [],
     stat2: [],
@@ -205,6 +209,7 @@ export default function SportCreateForm(props) {
           sport,
           team,
           position,
+          highlight,
           jersey,
           stat1,
           stat2,
@@ -298,6 +303,7 @@ export default function SportCreateForm(props) {
               sport,
               team,
               position,
+              highlight,
               jersey,
               stat1,
               stat2,
@@ -352,6 +358,7 @@ export default function SportCreateForm(props) {
               sport,
               team,
               position,
+              highlight,
               jersey,
               stat1,
               stat2,
@@ -406,6 +413,7 @@ export default function SportCreateForm(props) {
               sport,
               team,
               position,
+              highlight,
               jersey,
               stat1,
               stat2,
@@ -460,6 +468,7 @@ export default function SportCreateForm(props) {
               sport,
               team,
               position,
+              highlight,
               jersey,
               stat1,
               stat2,
@@ -514,6 +523,7 @@ export default function SportCreateForm(props) {
               sport,
               team,
               position,
+              highlight,
               jersey,
               stat1,
               stat2,
@@ -568,6 +578,7 @@ export default function SportCreateForm(props) {
               sport,
               team,
               position,
+              highlight,
               jersey,
               stat1,
               stat2,
@@ -622,6 +633,7 @@ export default function SportCreateForm(props) {
               sport,
               team,
               position,
+              highlight,
               jersey,
               stat1,
               stat2,
@@ -676,6 +688,7 @@ export default function SportCreateForm(props) {
               sport,
               team,
               position,
+              highlight,
               jersey,
               stat1,
               stat2,
@@ -730,6 +743,7 @@ export default function SportCreateForm(props) {
               sport,
               team,
               position,
+              highlight,
               jersey,
               stat1,
               stat2,
@@ -784,6 +798,7 @@ export default function SportCreateForm(props) {
               sport,
               team,
               position,
+              highlight,
               jersey,
               stat1,
               stat2,
@@ -838,6 +853,7 @@ export default function SportCreateForm(props) {
               sport,
               team,
               position,
+              highlight,
               jersey,
               stat1,
               stat2,
@@ -892,6 +908,7 @@ export default function SportCreateForm(props) {
               sport,
               team,
               position,
+              highlight,
               jersey,
               stat1,
               stat2,
@@ -946,6 +963,7 @@ export default function SportCreateForm(props) {
               sport,
               team,
               position,
+              highlight,
               jersey,
               stat1,
               stat2,
@@ -1000,6 +1018,7 @@ export default function SportCreateForm(props) {
               sport,
               team,
               position,
+              highlight,
               jersey,
               stat1,
               stat2,
@@ -1054,6 +1073,7 @@ export default function SportCreateForm(props) {
               sport,
               team,
               position,
+              highlight,
               jersey,
               stat1,
               stat2,
@@ -1108,6 +1128,7 @@ export default function SportCreateForm(props) {
               sport,
               team,
               position,
+              highlight,
               jersey,
               stat1,
               stat2,
@@ -1162,6 +1183,7 @@ export default function SportCreateForm(props) {
               sport,
               team,
               position,
+              highlight,
               jersey,
               stat1,
               stat2,
@@ -1216,6 +1238,7 @@ export default function SportCreateForm(props) {
               sport,
               team,
               position,
+              highlight,
               jersey,
               stat1,
               stat2,
@@ -1270,6 +1293,7 @@ export default function SportCreateForm(props) {
               sport: value,
               team,
               position,
+              highlight,
               jersey,
               stat1,
               stat2,
@@ -1324,6 +1348,7 @@ export default function SportCreateForm(props) {
               sport,
               team: value,
               position,
+              highlight,
               jersey,
               stat1,
               stat2,
@@ -1378,6 +1403,7 @@ export default function SportCreateForm(props) {
               sport,
               team,
               position: value,
+              highlight,
               jersey,
               stat1,
               stat2,
@@ -1401,6 +1427,61 @@ export default function SportCreateForm(props) {
         errorMessage={errors.position?.errorMessage}
         hasError={errors.position?.hasError}
         {...getOverrideProps(overrides, "position")}
+      ></TextField>
+      <TextField
+        label="Highlight"
+        isRequired={false}
+        isReadOnly={false}
+        value={highlight}
+        onChange={(e) => {
+          let { value } = e.target;
+          if (onChange) {
+            const modelFields = {
+              name,
+              grad,
+              height,
+              weight,
+              email,
+              phone,
+              gpa,
+              rank,
+              sat,
+              act,
+              aps,
+              coachname,
+              coachphone,
+              coachemail,
+              parentname,
+              parentphone,
+              parentemail,
+              address,
+              sport,
+              team,
+              position,
+              highlight: value,
+              jersey,
+              stat1,
+              stat2,
+              stat3,
+              stat4,
+              stat5,
+              stat6,
+              volunteer,
+              hobbies,
+              othersport,
+            };
+            const result = onChange(modelFields);
+            value = result?.highlight ?? value;
+          }
+          if (errors.highlight?.hasError) {
+            runValidationTasks("highlight", value);
+          }
+          setHighlight(value);
+        }}
+        onBlur={() => runValidationTasks("highlight", highlight)}
+        errorMessage={errors.highlight?.errorMessage}
+        hasError={errors.highlight?.hasError}
+        {...getOverrideProps(overrides, "highlight")}
       ></TextField>
       <TextField
         label="Jersey"
@@ -1432,6 +1513,7 @@ export default function SportCreateForm(props) {
               sport,
               team,
               position,
+              highlight,
               jersey: value,
               stat1,
               stat2,
@@ -1486,6 +1568,7 @@ export default function SportCreateForm(props) {
               sport,
               team,
               position,
+              highlight,
               jersey,
               stat1: value,
               stat2,
@@ -1540,6 +1623,7 @@ export default function SportCreateForm(props) {
               sport,
               team,
               position,
+              highlight,
               jersey,
               stat1,
               stat2: value,
@@ -1594,6 +1678,7 @@ export default function SportCreateForm(props) {
               sport,
               team,
               position,
+              highlight,
               jersey,
               stat1,
               stat2,
@@ -1648,6 +1733,7 @@ export default function SportCreateForm(props) {
               sport,
               team,
               position,
+              highlight,
               jersey,
               stat1,
               stat2,
@@ -1702,6 +1788,7 @@ export default function SportCreateForm(props) {
               sport,
               team,
               position,
+              highlight,
               jersey,
               stat1,
               stat2,
@@ -1756,6 +1843,7 @@ export default function SportCreateForm(props) {
               sport,
               team,
               position,
+              highlight,
               jersey,
               stat1,
               stat2,
@@ -1810,6 +1898,7 @@ export default function SportCreateForm(props) {
               sport,
               team,
               position,
+              highlight,
               jersey,
               stat1,
               stat2,
@@ -1864,6 +1953,7 @@ export default function SportCreateForm(props) {
               sport,
               team,
               position,
+              highlight,
               jersey,
               stat1,
               stat2,
@@ -1918,6 +2008,7 @@ export default function SportCreateForm(props) {
               sport,
               team,
               position,
+              highlight,
               jersey,
               stat1,
               stat2,

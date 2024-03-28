@@ -5,8 +5,8 @@
  **************************************************************************/
 
 import * as React from "react";
-import { UIEditSportProps } from "./UIEditSport";
-import { ViewProps } from "@aws-amplify/ui-react";
+import { ReviewNavBarProps } from "./ReviewNavBar";
+import { FlexProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -18,11 +18,11 @@ export declare type Variant = {
     overrides: EscapeHatchProps;
 };
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
-export declare type UICreateSportOverridesProps = {
-    UICreateSport?: PrimitiveOverrideProps<ViewProps>;
-    UI_EditSport?: UIEditSportProps;
+export declare type SportsNavBarOverridesProps = {
+    SportsNavBar?: PrimitiveOverrideProps<FlexProps>;
+    ReviewNavBar?: ReviewNavBarProps;
 } & EscapeHatchProps;
-export declare type UICreateSportProps = React.PropsWithChildren<Partial<ViewProps> & {
-    overrides?: UICreateSportOverridesProps | undefined | null;
+export declare type SportsNavBarProps = React.PropsWithChildren<Partial<FlexProps> & {
+    overrides?: SportsNavBarOverridesProps | undefined | null;
 }>;
-export default function UICreateSport(props: UICreateSportProps): React.ReactElement;
+export default function SportsNavBar(props: SportsNavBarProps): React.ReactElement;

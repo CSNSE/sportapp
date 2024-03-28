@@ -7,39 +7,27 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "./utils";
-import UIEditSport from "./UIEditSport";
 import { View } from "@aws-amplify/ui-react";
-export default function UICreateSport(props) {
+export default function SportsHome(props) {
   const { overrides, ...rest } = props;
   return (
     <View
-      width="640px"
-      height="1517px"
+      width="320px"
+      height="342px"
       display="block"
       gap="unset"
       alignItems="unset"
       justifyContent="unset"
       position="relative"
       padding="0px 0px 0px 0px"
-      {...getOverrideProps(overrides, "UICreateSport")}
+      {...getOverrideProps(overrides, "SportsHome")}
       {...rest}
     >
-      <UIEditSport
-        width="640px"
-        height="1517px"
-        display="block"
-        gap="unset"
-        alignItems="unset"
-        justifyContent="unset"
-        position="absolute"
-        top="0%"
-        bottom="0%"
-        left="0%"
-        right="0%"
-        padding="0px 0px 0px 0px"
-        backgroundColor="rgba(255,255,255,1)"
-        {...getOverrideProps(overrides, "UI_EditSport")}
-      ></UIEditSport>
+      <View
+        width="320px"
+        height="342px"
+        {...getOverrideProps(overrides, "SportHomePage")}
+      ></View>
     </View>
   );
 }

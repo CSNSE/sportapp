@@ -43,6 +43,7 @@ export declare type SportUpdateFormInputValues = {
     sport?: string;
     team?: string;
     position?: string;
+    highlight?: string;
     jersey?: string;
     stat1?: string;
     stat2?: string;
@@ -76,6 +77,7 @@ export declare type SportUpdateFormValidationValues = {
     sport?: ValidationFunction<string>;
     team?: ValidationFunction<string>;
     position?: ValidationFunction<string>;
+    highlight?: ValidationFunction<string>;
     jersey?: ValidationFunction<string>;
     stat1?: ValidationFunction<string>;
     stat2?: ValidationFunction<string>;
@@ -111,6 +113,7 @@ export declare type SportUpdateFormOverridesProps = {
     sport?: PrimitiveOverrideProps<TextFieldProps>;
     team?: PrimitiveOverrideProps<TextFieldProps>;
     position?: PrimitiveOverrideProps<TextFieldProps>;
+    highlight?: PrimitiveOverrideProps<TextFieldProps>;
     jersey?: PrimitiveOverrideProps<TextFieldProps>;
     stat1?: PrimitiveOverrideProps<TextFieldProps>;
     stat2?: PrimitiveOverrideProps<TextFieldProps>;

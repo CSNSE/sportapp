@@ -21,6 +21,7 @@ type Sport @model @auth(rules: [{allow: public}]) {
   sport: String
   team: String
   position: String
+  highlight: String
   jersey: String
   stat1: String
   stat2: String

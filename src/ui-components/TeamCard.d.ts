@@ -5,8 +5,8 @@
  **************************************************************************/
 
 import * as React from "react";
-import { ReviewCardProps } from "./ReviewCard";
-import { FlexProps } from "@aws-amplify/ui-react";
+import { ButtonProps, FlexProps, ImageProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
+import { MyIconProps } from "./MyIcon";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -20,7 +20,16 @@ export declare type Variant = {
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type TeamCardOverridesProps = {
     TeamCard?: PrimitiveOverrideProps<FlexProps>;
-    ReviewCard?: ReviewCardProps;
+    image?: PrimitiveOverrideProps<ImageProps>;
+    "Frame 324"?: PrimitiveOverrideProps<ViewProps>;
+    MyIcon4224714?: MyIconProps;
+    MyIcon4224715?: MyIconProps;
+    Button4224716?: PrimitiveOverrideProps<ButtonProps>;
+    Button4224717?: PrimitiveOverrideProps<ButtonProps>;
+    "Card Area"?: PrimitiveOverrideProps<FlexProps>;
+    "Text Group"?: PrimitiveOverrideProps<FlexProps>;
+    "Team Name"?: PrimitiveOverrideProps<TextProps>;
+    "Coach Name"?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;
 export declare type TeamCardProps = React.PropsWithChildren<Partial<FlexProps> & {
     overrides?: TeamCardOverridesProps | undefined | null;
