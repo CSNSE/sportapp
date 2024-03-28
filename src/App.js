@@ -13,7 +13,7 @@ class App extends Component {
     <div className="App"><header className="App-header">
       <Routes>
       <Route exact path='/' element={<div><SportHomePage/></div>}/>
-        <Route exact path='/team' element={<div><TeamNavBar/><TeamCardCollection/></div>}/>
+        <Route exact path='/team' element={<div><SportNavBar/><TeamCardCollection/></div>}/>
         <Route exact path='/new' element= {<div><NewSport/></div>} />
         <Route exact path='/edit/:cid' element= {<div><EditSport/></div>} />
       </Routes>

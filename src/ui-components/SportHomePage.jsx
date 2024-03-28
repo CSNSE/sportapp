@@ -6,22 +6,14 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { getOverrideProps, useNavigateAction } from "./utils";
+import { getOverrideProps } from "./utils";
 import { Button, Divider, Flex, Text, View } from "@aws-amplify/ui-react";
 export default function SportHomePage(props) {
   const { overrides, ...rest } = props;
-  const buttonFourTwoTwoTwoOneThreeZeroFiveOnClick = useNavigateAction({
-    type: "url",
-    url: "/all",
-  });
-  const buttonFourTwoTwoTwoOneThreeZeroSixOnClick = useNavigateAction({
-    type: "url",
-    url: "/team",
-  });
   return (
     <View
       width="320px"
-      height="342px"
+      height="380px"
       display="block"
       gap="unset"
       alignItems="unset"
@@ -34,7 +26,7 @@ export default function SportHomePage(props) {
     >
       <View
         width="320px"
-        height="342px"
+        height="380px"
         display="block"
         gap="unset"
         alignItems="unset"
@@ -53,15 +45,15 @@ export default function SportHomePage(props) {
           justifyContent="center"
           alignItems="center"
           position="absolute"
-          top="24px"
+          top="41px"
           left="24px"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Edit Profile")}
+          {...getOverrideProps(overrides, "Edit Profile42321011")}
         >
           <Text
             fontFamily="Inter"
-            fontSize="32px"
-            fontWeight="700"
+            fontSize="36px"
+            fontWeight="800"
             color="rgba(13,26,38,1)"
             lineHeight="20px"
             textAlign="center"
@@ -76,19 +68,19 @@ export default function SportHomePage(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children="CSN Sports&#xA;Info"
-            {...getOverrideProps(overrides, "CSN Sports Info")}
+            children="CSN Sports"
+            {...getOverrideProps(overrides, "CSN Sports")}
           ></Text>
         </Flex>
         <Divider
           width="272px"
           height="1px"
           position="absolute"
-          top="93px"
+          top="129px"
           left="24px"
           size="small"
           orientation="horizontal"
-          {...getOverrideProps(overrides, "Divider42221304")}
+          {...getOverrideProps(overrides, "Divider42321013")}
         ></Divider>
         <Button
           width="200px"
@@ -97,16 +89,13 @@ export default function SportHomePage(props) {
           border="5px SOLID rgba(13,26,38,1)"
           borderRadius="4px"
           padding="3px 11px 3px 11px"
-          top="182px"
+          top="220px"
           left="60px"
           size="default"
           isDisabled={false}
           variation="default"
           children="All Players"
-          onClick={() => {
-            buttonFourTwoTwoTwoOneThreeZeroFiveOnClick();
-          }}
-          {...getOverrideProps(overrides, "Button42221305")}
+          {...getOverrideProps(overrides, "Button42321014")}
         ></Button>
         <Button
           width="200px"
@@ -115,16 +104,13 @@ export default function SportHomePage(props) {
           border="5px SOLID rgba(13,26,38,1)"
           borderRadius="4px"
           padding="3px 11px 3px 11px"
-          top="113px"
-          left="60px"
+          top="150px"
+          left="57px"
           size="default"
           isDisabled={false}
           variation="default"
           children="Teams"
-          onClick={() => {
-            buttonFourTwoTwoTwoOneThreeZeroSixOnClick();
-          }}
-          {...getOverrideProps(overrides, "Button42221306")}
+          {...getOverrideProps(overrides, "Button42321015")}
         ></Button>
         <Button
           width="200px"
@@ -133,24 +119,59 @@ export default function SportHomePage(props) {
           border="5px SOLID rgba(13,26,38,1)"
           borderRadius="4px"
           padding="3px 11px 3px 11px"
-          top="251px"
-          left="59px"
+          top="290px"
+          left="60px"
           size="default"
           isDisabled={false}
           variation="default"
           children="Profile"
-          {...getOverrideProps(overrides, "Button42221311")}
+          {...getOverrideProps(overrides, "Button42321020")}
         ></Button>
         <Divider
           width="272px"
           height="7px"
           position="absolute"
-          top="327px"
+          top="360px"
           left="24px"
           size="small"
           orientation="horizontal"
-          {...getOverrideProps(overrides, "Divider42221312")}
+          {...getOverrideProps(overrides, "Divider42321021")}
         ></Divider>
+        <Flex
+          gap="16px"
+          direction="row"
+          width="272px"
+          height="47px"
+          justifyContent="center"
+          alignItems="center"
+          position="absolute"
+          top="82px"
+          left="24px"
+          padding="0px 0px 0px 0px"
+          {...getOverrideProps(overrides, "Edit Profile42321052")}
+        >
+          <Text
+            fontFamily="Inter"
+            fontSize="36px"
+            fontWeight="800"
+            color="rgba(13,26,38,1)"
+            lineHeight="20px"
+            textAlign="center"
+            display="block"
+            direction="column"
+            justifyContent="unset"
+            width="unset"
+            height="unset"
+            gap="unset"
+            alignItems="unset"
+            shrink="0"
+            position="relative"
+            padding="0px 0px 0px 0px"
+            whiteSpace="pre-wrap"
+            children="Information"
+            {...getOverrideProps(overrides, "Information")}
+          ></Text>
+        </Flex>
       </View>
     </View>
   );

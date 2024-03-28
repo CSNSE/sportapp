@@ -20,13 +20,15 @@ export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes
 export declare type SportHomePageOverridesProps = {
     SportHomePage?: PrimitiveOverrideProps<ViewProps>;
     Content?: PrimitiveOverrideProps<ViewProps>;
-    "Edit Profile"?: PrimitiveOverrideProps<FlexProps>;
-    "CSN Sports Info"?: PrimitiveOverrideProps<TextProps>;
-    Divider42221304?: PrimitiveOverrideProps<DividerProps>;
-    Button42221305?: PrimitiveOverrideProps<ButtonProps>;
-    Button42221306?: PrimitiveOverrideProps<ButtonProps>;
-    Button42221311?: PrimitiveOverrideProps<ButtonProps>;
-    Divider42221312?: PrimitiveOverrideProps<DividerProps>;
+    "Edit Profile42321011"?: PrimitiveOverrideProps<FlexProps>;
+    "CSN Sports"?: PrimitiveOverrideProps<TextProps>;
+    Divider42321013?: PrimitiveOverrideProps<DividerProps>;
+    Button42321014?: PrimitiveOverrideProps<ButtonProps>;
+    Button42321015?: PrimitiveOverrideProps<ButtonProps>;
+    Button42321020?: PrimitiveOverrideProps<ButtonProps>;
+    Divider42321021?: PrimitiveOverrideProps<DividerProps>;
+    "Edit Profile42321052"?: PrimitiveOverrideProps<FlexProps>;
+    Information?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;
 export declare type SportHomePageProps = React.PropsWithChildren<Partial<ViewProps> & {
     overrides?: SportHomePageOverridesProps | undefined | null;
