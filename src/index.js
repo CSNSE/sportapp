@@ -5,13 +5,37 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Amplify } from 'aws-amplify';
 import config from './aws-exports';
+import { BrowserRouter } from "react-router-dom";
+import "@aws-amplify/ui-react/styles.css";
+import { ThemeProvider, createTheme } from "@aws-amplify/ui-react";
+import { studioTheme } from './ui-components';
 Amplify.configure(config);
 
+
+const updatedTheme = createTheme({
+  name: "my-theme-updates", 
+  tokens: {
+      components: {
+          button: {
+              primary: {
+                  backgroundColor: {
+                      value: "#b71c1c"
+                  },
+              },
+          },
+      },
+  },
+}, studioTheme)
+Amplify.configure(config);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+    <ThemeProvider theme={updatedTheme}>
+        <App />
+    </ThemeProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
