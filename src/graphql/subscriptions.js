@@ -1,6 +1,45 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
+export const onCreateTeam = /* GraphQL */ `
+  subscription OnCreateTeam($filter: ModelSubscriptionTeamFilterInput) {
+    onCreateTeam(filter: $filter) {
+      id
+      name
+      image
+      coach
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+`;
+export const onUpdateTeam = /* GraphQL */ `
+  subscription OnUpdateTeam($filter: ModelSubscriptionTeamFilterInput) {
+    onUpdateTeam(filter: $filter) {
+      id
+      name
+      image
+      coach
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+`;
+export const onDeleteTeam = /* GraphQL */ `
+  subscription OnDeleteTeam($filter: ModelSubscriptionTeamFilterInput) {
+    onDeleteTeam(filter: $filter) {
+      id
+      name
+      image
+      coach
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+`;
 export const onCreateSport = /* GraphQL */ `
   subscription OnCreateSport($filter: ModelSubscriptionSportFilterInput) {
     onCreateSport(filter: $filter) {

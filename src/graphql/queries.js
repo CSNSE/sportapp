@@ -1,6 +1,40 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
+export const getTeam = /* GraphQL */ `
+  query GetTeam($id: ID!) {
+    getTeam(id: $id) {
+      id
+      name
+      image
+      coach
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+`;
+export const listTeams = /* GraphQL */ `
+  query ListTeams(
+    $filter: ModelTeamFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    listTeams(filter: $filter, limit: $limit, nextToken: $nextToken) {
+      items {
+        id
+        name
+        image
+        coach
+        createdAt
+        updatedAt
+        __typename
+      }
+      nextToken
+      __typename
+    }
+  }
+`;
 export const getSport = /* GraphQL */ `
   query GetSport($id: ID!) {
     getSport(id: $id) {
