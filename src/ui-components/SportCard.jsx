@@ -9,7 +9,7 @@ import * as React from "react";
 import { getOverrideProps } from "./utils";
 import { Divider, Flex, Icon, Image, Text, View } from "@aws-amplify/ui-react";
 export default function SportCard(props) {
-  const { overrides, ...rest } = props;
+  const { sport, overrides, ...rest } = props;
   return (
     <View
       width="640px"
@@ -104,7 +104,7 @@ export default function SportCard(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children="Name"
+            children={sport?.name}
             {...getOverrideProps(overrides, "Name4178767")}
           ></Text>
           <Text
@@ -163,6 +163,7 @@ export default function SportCard(props) {
             left="0px"
             padding="0px 0px 0px 0px"
             objectFit="cover"
+            src={sport?.picture}
             {...getOverrideProps(overrides, "image")}
           ></Image>
           <Flex
@@ -233,7 +234,7 @@ export default function SportCard(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children="Name"
+                children={sport?.name}
                 {...getOverrideProps(overrides, "Name4178904")}
               ></Text>
               <Text
@@ -256,7 +257,7 @@ export default function SportCard(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children="Graduation Year"
+                children={sport?.grad}
                 {...getOverrideProps(overrides, "Graduation Year")}
               ></Text>
               <Text
@@ -278,7 +279,7 @@ export default function SportCard(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children="Height"
+                children={sport?.height}
                 {...getOverrideProps(overrides, "Height")}
               ></Text>
               <Text
@@ -300,7 +301,7 @@ export default function SportCard(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children="Weight"
+                children={sport?.weight}
                 {...getOverrideProps(overrides, "Weight")}
               ></Text>
               <Text
@@ -322,7 +323,7 @@ export default function SportCard(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children="Email"
+                children={sport?.email}
                 {...getOverrideProps(overrides, "Email4200401")}
               ></Text>
               <Text
@@ -344,7 +345,7 @@ export default function SportCard(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children="Phone Number"
+                children={sport?.phone}
                 {...getOverrideProps(overrides, "Phone Number4200402")}
               ></Text>
             </Flex>
@@ -417,7 +418,7 @@ export default function SportCard(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children="Sport"
+                children={sport?.sport}
                 {...getOverrideProps(overrides, "Sport")}
               ></Text>
               <Text
@@ -440,7 +441,7 @@ export default function SportCard(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children="Team"
+                children={sport?.team}
                 {...getOverrideProps(overrides, "Team")}
               ></Text>
               <Text
@@ -463,7 +464,7 @@ export default function SportCard(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children="Position"
+                children={sport?.position}
                 {...getOverrideProps(overrides, "Position")}
               ></Text>
               <Text
@@ -486,7 +487,7 @@ export default function SportCard(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children="Highlight Link"
+                children={sport?.highlight}
                 {...getOverrideProps(overrides, "Highlight Link")}
               ></Text>
               <Text
@@ -509,7 +510,7 @@ export default function SportCard(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children="Jersey"
+                children={sport?.jersey}
                 {...getOverrideProps(overrides, "Jersey")}
               ></Text>
             </Flex>
@@ -582,7 +583,7 @@ export default function SportCard(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children="Stat 1"
+                children={sport?.stat1}
                 {...getOverrideProps(overrides, "Stat 1")}
               ></Text>
               <Text
@@ -605,7 +606,7 @@ export default function SportCard(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children="Stat 2"
+                children={sport?.stat2}
                 {...getOverrideProps(overrides, "Stat 2")}
               ></Text>
               <Text
@@ -628,7 +629,7 @@ export default function SportCard(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children="Stat 3"
+                children={sport?.stat3}
                 {...getOverrideProps(overrides, "Stat 3")}
               ></Text>
               <Text
@@ -651,7 +652,7 @@ export default function SportCard(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children="Stat 4"
+                children={sport?.stat4}
                 {...getOverrideProps(overrides, "Stat 4")}
               ></Text>
               <Text
@@ -674,7 +675,7 @@ export default function SportCard(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children="Stat 5"
+                children={sport?.stat5}
                 {...getOverrideProps(overrides, "Stat 5")}
               ></Text>
               <Text
@@ -697,7 +698,7 @@ export default function SportCard(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children="Stat 6"
+                children={sport?.stat6}
                 {...getOverrideProps(overrides, "Stat 6")}
               ></Text>
             </Flex>
@@ -770,7 +771,7 @@ export default function SportCard(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children="Volunteering"
+                children={sport?.volunteer}
                 {...getOverrideProps(overrides, "Volunteering")}
               ></Text>
               <Text
@@ -793,7 +794,7 @@ export default function SportCard(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children="Hobbies"
+                children={sport?.hobbies}
                 {...getOverrideProps(overrides, "Hobbies")}
               ></Text>
               <Text
@@ -816,7 +817,7 @@ export default function SportCard(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children="Other Sports"
+                children={sport?.othersport}
                 {...getOverrideProps(overrides, "Other Sports")}
               ></Text>
             </Flex>
@@ -889,7 +890,7 @@ export default function SportCard(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children="GPA"
+                children={sport?.gpa}
                 {...getOverrideProps(overrides, "GPA")}
               ></Text>
               <Text
@@ -911,7 +912,7 @@ export default function SportCard(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children="Class Rank"
+                children={sport?.rank}
                 {...getOverrideProps(overrides, "Class Rank")}
               ></Text>
               <Text
@@ -933,7 +934,7 @@ export default function SportCard(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children="SAT Score"
+                children={sport?.sat}
                 {...getOverrideProps(overrides, "SAT Score")}
               ></Text>
               <Text
@@ -955,7 +956,7 @@ export default function SportCard(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children="ACT Score"
+                children={sport?.act}
                 {...getOverrideProps(overrides, "ACT Score")}
               ></Text>
               <Text
@@ -977,7 +978,7 @@ export default function SportCard(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children="AP Classes"
+                children={sport?.aps}
                 {...getOverrideProps(overrides, "AP Classes")}
               ></Text>
             </Flex>
@@ -1050,7 +1051,7 @@ export default function SportCard(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children="Parents Name"
+                children={sport?.parentname}
                 {...getOverrideProps(overrides, "Parents Name")}
               ></Text>
               <Text
@@ -1072,7 +1073,7 @@ export default function SportCard(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children="Phone Number"
+                children={sport?.parentphone}
                 {...getOverrideProps(overrides, "Phone Number4190448")}
               ></Text>
               <Text
@@ -1094,7 +1095,7 @@ export default function SportCard(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children="Email"
+                children={sport?.parentemail}
                 {...getOverrideProps(overrides, "Email4215477")}
               ></Text>
               <Text
@@ -1116,7 +1117,7 @@ export default function SportCard(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children="Address"
+                children={sport?.address}
                 {...getOverrideProps(overrides, "Address")}
               ></Text>
             </Flex>
@@ -1189,7 +1190,7 @@ export default function SportCard(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children="Coach Name"
+                children={sport?.coachname}
                 {...getOverrideProps(overrides, "Coach Name")}
               ></Text>
               <Text
@@ -1211,7 +1212,7 @@ export default function SportCard(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children="Phone Number"
+                children={sport?.coachphone}
                 {...getOverrideProps(overrides, "Phone Number4190453")}
               ></Text>
               <Text
@@ -1233,7 +1234,7 @@ export default function SportCard(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children="Email"
+                children={sport?.coachemail}
                 {...getOverrideProps(overrides, "Email4201410")}
               ></Text>
             </Flex>

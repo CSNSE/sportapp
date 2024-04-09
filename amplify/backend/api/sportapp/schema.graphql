@@ -39,6 +39,7 @@ type Sport @model @auth(rules: [{allow: public}]) {
   volunteer: String
   hobbies: String
   othersport: String
+  picture: String
 }
 
 type Note @model @auth(rules: [{allow: public}]) {

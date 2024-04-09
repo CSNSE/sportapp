@@ -6,10 +6,12 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { getOverrideProps } from "./utils";
+import { getOverrideProps, useNavigateAction } from "./utils";
 import { Button, Flex, Text } from "@aws-amplify/ui-react";
 export default function SportNavBar(props) {
   const { overrides, ...rest } = props;
+  const homePageOnClick = useNavigateAction({ type: "url", url: "/" });
+  const buttonOnClick = useNavigateAction({ type: "url", url: "/newt" });
   return (
     <Flex
       gap="20px"
@@ -92,6 +94,9 @@ export default function SportNavBar(props) {
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Home Page"
+          onClick={() => {
+            homePageOnClick();
+          }}
           {...getOverrideProps(overrides, "Home Page")}
         ></Text>
       </Flex>
@@ -106,6 +111,9 @@ export default function SportNavBar(props) {
         isDisabled={false}
         variation="default"
         children="Add Team"
+        onClick={() => {
+          buttonOnClick();
+        }}
         {...getOverrideProps(overrides, "Button")}
       ></Button>
     </Flex>

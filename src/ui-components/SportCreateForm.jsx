@@ -55,6 +55,7 @@ export default function SportCreateForm(props) {
     volunteer: "",
     hobbies: "",
     othersport: "",
+    picture: "",
   };
   const [name, setName] = React.useState(initialValues.name);
   const [grad, setGrad] = React.useState(initialValues.grad);
@@ -92,6 +93,7 @@ export default function SportCreateForm(props) {
   const [volunteer, setVolunteer] = React.useState(initialValues.volunteer);
   const [hobbies, setHobbies] = React.useState(initialValues.hobbies);
   const [othersport, setOthersport] = React.useState(initialValues.othersport);
+  const [picture, setPicture] = React.useState(initialValues.picture);
   const [errors, setErrors] = React.useState({});
   const resetStateValues = () => {
     setName(initialValues.name);
@@ -126,6 +128,7 @@ export default function SportCreateForm(props) {
     setVolunteer(initialValues.volunteer);
     setHobbies(initialValues.hobbies);
     setOthersport(initialValues.othersport);
+    setPicture(initialValues.picture);
     setErrors({});
   };
   const validations = {
@@ -161,6 +164,7 @@ export default function SportCreateForm(props) {
     volunteer: [],
     hobbies: [],
     othersport: [],
+    picture: [],
   };
   const runValidationTasks = async (
     fieldName,
@@ -220,6 +224,7 @@ export default function SportCreateForm(props) {
           volunteer,
           hobbies,
           othersport,
+          picture,
         };
         const validationResponses = await Promise.all(
           Object.keys(validations).reduce((promises, fieldName) => {
@@ -314,6 +319,7 @@ export default function SportCreateForm(props) {
               volunteer,
               hobbies,
               othersport,
+              picture,
             };
             const result = onChange(modelFields);
             value = result?.name ?? value;
@@ -369,6 +375,7 @@ export default function SportCreateForm(props) {
               volunteer,
               hobbies,
               othersport,
+              picture,
             };
             const result = onChange(modelFields);
             value = result?.grad ?? value;
@@ -424,6 +431,7 @@ export default function SportCreateForm(props) {
               volunteer,
               hobbies,
               othersport,
+              picture,
             };
             const result = onChange(modelFields);
             value = result?.height ?? value;
@@ -479,6 +487,7 @@ export default function SportCreateForm(props) {
               volunteer,
               hobbies,
               othersport,
+              picture,
             };
             const result = onChange(modelFields);
             value = result?.weight ?? value;
@@ -534,6 +543,7 @@ export default function SportCreateForm(props) {
               volunteer,
               hobbies,
               othersport,
+              picture,
             };
             const result = onChange(modelFields);
             value = result?.email ?? value;
@@ -589,6 +599,7 @@ export default function SportCreateForm(props) {
               volunteer,
               hobbies,
               othersport,
+              picture,
             };
             const result = onChange(modelFields);
             value = result?.phone ?? value;
@@ -644,6 +655,7 @@ export default function SportCreateForm(props) {
               volunteer,
               hobbies,
               othersport,
+              picture,
             };
             const result = onChange(modelFields);
             value = result?.gpa ?? value;
@@ -699,6 +711,7 @@ export default function SportCreateForm(props) {
               volunteer,
               hobbies,
               othersport,
+              picture,
             };
             const result = onChange(modelFields);
             value = result?.rank ?? value;
@@ -754,6 +767,7 @@ export default function SportCreateForm(props) {
               volunteer,
               hobbies,
               othersport,
+              picture,
             };
             const result = onChange(modelFields);
             value = result?.sat ?? value;
@@ -809,6 +823,7 @@ export default function SportCreateForm(props) {
               volunteer,
               hobbies,
               othersport,
+              picture,
             };
             const result = onChange(modelFields);
             value = result?.act ?? value;
@@ -864,6 +879,7 @@ export default function SportCreateForm(props) {
               volunteer,
               hobbies,
               othersport,
+              picture,
             };
             const result = onChange(modelFields);
             value = result?.aps ?? value;
@@ -919,6 +935,7 @@ export default function SportCreateForm(props) {
               volunteer,
               hobbies,
               othersport,
+              picture,
             };
             const result = onChange(modelFields);
             value = result?.coachname ?? value;
@@ -974,6 +991,7 @@ export default function SportCreateForm(props) {
               volunteer,
               hobbies,
               othersport,
+              picture,
             };
             const result = onChange(modelFields);
             value = result?.coachphone ?? value;
@@ -1029,6 +1047,7 @@ export default function SportCreateForm(props) {
               volunteer,
               hobbies,
               othersport,
+              picture,
             };
             const result = onChange(modelFields);
             value = result?.coachemail ?? value;
@@ -1084,6 +1103,7 @@ export default function SportCreateForm(props) {
               volunteer,
               hobbies,
               othersport,
+              picture,
             };
             const result = onChange(modelFields);
             value = result?.parentname ?? value;
@@ -1139,6 +1159,7 @@ export default function SportCreateForm(props) {
               volunteer,
               hobbies,
               othersport,
+              picture,
             };
             const result = onChange(modelFields);
             value = result?.parentphone ?? value;
@@ -1194,6 +1215,7 @@ export default function SportCreateForm(props) {
               volunteer,
               hobbies,
               othersport,
+              picture,
             };
             const result = onChange(modelFields);
             value = result?.parentemail ?? value;
@@ -1249,6 +1271,7 @@ export default function SportCreateForm(props) {
               volunteer,
               hobbies,
               othersport,
+              picture,
             };
             const result = onChange(modelFields);
             value = result?.address ?? value;
@@ -1304,6 +1327,7 @@ export default function SportCreateForm(props) {
               volunteer,
               hobbies,
               othersport,
+              picture,
             };
             const result = onChange(modelFields);
             value = result?.sport ?? value;
@@ -1359,6 +1383,7 @@ export default function SportCreateForm(props) {
               volunteer,
               hobbies,
               othersport,
+              picture,
             };
             const result = onChange(modelFields);
             value = result?.team ?? value;
@@ -1414,6 +1439,7 @@ export default function SportCreateForm(props) {
               volunteer,
               hobbies,
               othersport,
+              picture,
             };
             const result = onChange(modelFields);
             value = result?.position ?? value;
@@ -1469,6 +1495,7 @@ export default function SportCreateForm(props) {
               volunteer,
               hobbies,
               othersport,
+              picture,
             };
             const result = onChange(modelFields);
             value = result?.highlight ?? value;
@@ -1524,6 +1551,7 @@ export default function SportCreateForm(props) {
               volunteer,
               hobbies,
               othersport,
+              picture,
             };
             const result = onChange(modelFields);
             value = result?.jersey ?? value;
@@ -1579,6 +1607,7 @@ export default function SportCreateForm(props) {
               volunteer,
               hobbies,
               othersport,
+              picture,
             };
             const result = onChange(modelFields);
             value = result?.stat1 ?? value;
@@ -1634,6 +1663,7 @@ export default function SportCreateForm(props) {
               volunteer,
               hobbies,
               othersport,
+              picture,
             };
             const result = onChange(modelFields);
             value = result?.stat2 ?? value;
@@ -1689,6 +1719,7 @@ export default function SportCreateForm(props) {
               volunteer,
               hobbies,
               othersport,
+              picture,
             };
             const result = onChange(modelFields);
             value = result?.stat3 ?? value;
@@ -1744,6 +1775,7 @@ export default function SportCreateForm(props) {
               volunteer,
               hobbies,
               othersport,
+              picture,
             };
             const result = onChange(modelFields);
             value = result?.stat4 ?? value;
@@ -1799,6 +1831,7 @@ export default function SportCreateForm(props) {
               volunteer,
               hobbies,
               othersport,
+              picture,
             };
             const result = onChange(modelFields);
             value = result?.stat5 ?? value;
@@ -1854,6 +1887,7 @@ export default function SportCreateForm(props) {
               volunteer,
               hobbies,
               othersport,
+              picture,
             };
             const result = onChange(modelFields);
             value = result?.stat6 ?? value;
@@ -1909,6 +1943,7 @@ export default function SportCreateForm(props) {
               volunteer: value,
               hobbies,
               othersport,
+              picture,
             };
             const result = onChange(modelFields);
             value = result?.volunteer ?? value;
@@ -1964,6 +1999,7 @@ export default function SportCreateForm(props) {
               volunteer,
               hobbies: value,
               othersport,
+              picture,
             };
             const result = onChange(modelFields);
             value = result?.hobbies ?? value;
@@ -2019,6 +2055,7 @@ export default function SportCreateForm(props) {
               volunteer,
               hobbies,
               othersport: value,
+              picture,
             };
             const result = onChange(modelFields);
             value = result?.othersport ?? value;
@@ -2032,6 +2069,62 @@ export default function SportCreateForm(props) {
         errorMessage={errors.othersport?.errorMessage}
         hasError={errors.othersport?.hasError}
         {...getOverrideProps(overrides, "othersport")}
+      ></TextField>
+      <TextField
+        label="Picture"
+        isRequired={false}
+        isReadOnly={false}
+        value={picture}
+        onChange={(e) => {
+          let { value } = e.target;
+          if (onChange) {
+            const modelFields = {
+              name,
+              grad,
+              height,
+              weight,
+              email,
+              phone,
+              gpa,
+              rank,
+              sat,
+              act,
+              aps,
+              coachname,
+              coachphone,
+              coachemail,
+              parentname,
+              parentphone,
+              parentemail,
+              address,
+              sport,
+              team,
+              position,
+              highlight,
+              jersey,
+              stat1,
+              stat2,
+              stat3,
+              stat4,
+              stat5,
+              stat6,
+              volunteer,
+              hobbies,
+              othersport,
+              picture: value,
+            };
+            const result = onChange(modelFields);
+            value = result?.picture ?? value;
+          }
+          if (errors.picture?.hasError) {
+            runValidationTasks("picture", value);
+          }
+          setPicture(value);
+        }}
+        onBlur={() => runValidationTasks("picture", picture)}
+        errorMessage={errors.picture?.errorMessage}
+        hasError={errors.picture?.hasError}
+        {...getOverrideProps(overrides, "picture")}
       ></TextField>
       <Flex
         justifyContent="space-between"

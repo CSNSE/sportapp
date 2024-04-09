@@ -83,6 +83,8 @@ export declare type SportCardOverridesProps = {
     Email4201410?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;
 export declare type SportCardProps = React.PropsWithChildren<Partial<ViewProps> & {
+    sport?: any;
+} & {
     overrides?: SportCardOverridesProps | undefined | null;
 }>;
 export default function SportCard(props: SportCardProps): React.ReactElement;

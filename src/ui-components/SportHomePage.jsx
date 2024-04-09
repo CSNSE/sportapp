@@ -6,14 +6,22 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { getOverrideProps } from "./utils";
+import { getOverrideProps, useNavigateAction } from "./utils";
 import { Button, Divider, Flex, Text, View } from "@aws-amplify/ui-react";
 export default function SportHomePage(props) {
   const { overrides, ...rest } = props;
+  const buttonFourTwoThreeTwoOneZeroOneFourOnClick = useNavigateAction({
+    type: "url",
+    url: "/all",
+  });
+  const buttonFourTwoThreeTwoOneZeroOneFiveOnClick = useNavigateAction({
+    type: "url",
+    url: "/team",
+  });
   return (
     <View
       width="320px"
-      height="380px"
+      height="326px"
       display="block"
       gap="unset"
       alignItems="unset"
@@ -26,7 +34,7 @@ export default function SportHomePage(props) {
     >
       <View
         width="320px"
-        height="380px"
+        height="326px"
         display="block"
         gap="unset"
         alignItems="unset"
@@ -89,12 +97,15 @@ export default function SportHomePage(props) {
           border="5px SOLID rgba(13,26,38,1)"
           borderRadius="4px"
           padding="3px 11px 3px 11px"
-          top="220px"
-          left="60px"
+          top="224px"
+          left="56px"
           size="default"
           isDisabled={false}
           variation="default"
           children="All Players"
+          onClick={() => {
+            buttonFourTwoThreeTwoOneZeroOneFourOnClick();
+          }}
           {...getOverrideProps(overrides, "Button42321014")}
         ></Button>
         <Button
@@ -110,28 +121,16 @@ export default function SportHomePage(props) {
           isDisabled={false}
           variation="default"
           children="Teams"
+          onClick={() => {
+            buttonFourTwoThreeTwoOneZeroOneFiveOnClick();
+          }}
           {...getOverrideProps(overrides, "Button42321015")}
-        ></Button>
-        <Button
-          width="200px"
-          height="50px"
-          position="absolute"
-          border="5px SOLID rgba(13,26,38,1)"
-          borderRadius="4px"
-          padding="3px 11px 3px 11px"
-          top="290px"
-          left="60px"
-          size="default"
-          isDisabled={false}
-          variation="default"
-          children="Profile"
-          {...getOverrideProps(overrides, "Button42321020")}
         ></Button>
         <Divider
           width="272px"
           height="7px"
           position="absolute"
-          top="360px"
+          top="304px"
           left="24px"
           size="small"
           orientation="horizontal"

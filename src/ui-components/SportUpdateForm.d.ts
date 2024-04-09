@@ -54,6 +54,7 @@ export declare type SportUpdateFormInputValues = {
     volunteer?: string;
     hobbies?: string;
     othersport?: string;
+    picture?: string;
 };
 export declare type SportUpdateFormValidationValues = {
     name?: ValidationFunction<string>;
@@ -88,6 +89,7 @@ export declare type SportUpdateFormValidationValues = {
     volunteer?: ValidationFunction<string>;
     hobbies?: ValidationFunction<string>;
     othersport?: ValidationFunction<string>;
+    picture?: ValidationFunction<string>;
 };
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type SportUpdateFormOverridesProps = {
@@ -124,6 +126,7 @@ export declare type SportUpdateFormOverridesProps = {
     volunteer?: PrimitiveOverrideProps<TextFieldProps>;
     hobbies?: PrimitiveOverrideProps<TextFieldProps>;
     othersport?: PrimitiveOverrideProps<TextFieldProps>;
+    picture?: PrimitiveOverrideProps<TextFieldProps>;
 } & EscapeHatchProps;
 export declare type SportUpdateFormProps = React.PropsWithChildren<{
     overrides?: SportUpdateFormOverridesProps | undefined | null;

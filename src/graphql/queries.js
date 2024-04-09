@@ -71,6 +71,7 @@ export const getSport = /* GraphQL */ `
       volunteer
       hobbies
       othersport
+      picture
       createdAt
       updatedAt
       __typename
@@ -118,6 +119,7 @@ export const listSports = /* GraphQL */ `
         volunteer
         hobbies
         othersport
+        picture
         createdAt
         updatedAt
         __typename

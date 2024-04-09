@@ -25,7 +25,6 @@ export declare type SportHomePageOverridesProps = {
     Divider42321013?: PrimitiveOverrideProps<DividerProps>;
     Button42321014?: PrimitiveOverrideProps<ButtonProps>;
     Button42321015?: PrimitiveOverrideProps<ButtonProps>;
-    Button42321020?: PrimitiveOverrideProps<ButtonProps>;
     Divider42321021?: PrimitiveOverrideProps<DividerProps>;
     "Edit Profile42321052"?: PrimitiveOverrideProps<FlexProps>;
     Information?: PrimitiveOverrideProps<TextProps>;
