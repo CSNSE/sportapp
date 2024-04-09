@@ -1,9 +1,9 @@
 import React from 'react'
-import { TeamNavBar, UIEditSport } from "./ui-components";
+import { SportNavBar, UIEditTeam } from "./ui-components";
 import {useParams } from "react-router-dom";
 import "./App.css";
 
-function EditSport(){
+function EditTeam(){
     return <Put />;
 }
 
@@ -12,10 +12,10 @@ function EditSport(){
     console.log("found " +(cid));
     return (
       <div><header className="App-header">
-        <TeamNavBar/>
-        <UIEditSport idProp= {cid}/>
+        <SportNavBar/>
+        <UIEditTeam idProp= {cid}/>
         </header></div>
       );
     }
 
-export default EditSport
+export default EditTeam

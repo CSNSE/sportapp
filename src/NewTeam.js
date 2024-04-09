@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import { UICreateSport, TeamNavBar } from "./ui-components";
+import { UINewTeam, SportNavBar } from "./ui-components";
 import "./App.css";
 
-class NewSport extends Component {
+class NewTeam extends Component {
     render(){
         return (<Put />);
     }
@@ -11,10 +11,10 @@ class NewSport extends Component {
   function Put() {
     return (
       <div><header className="App-header">
-        <TeamNavBar/>
-        <UICreateSport style={{ textAlign: "left"}} />
+        <SportNavBar/>
+        <UINewTeam style={{ textAlign: "left"}} />
         </header></div>
       );
     }
 
-export default NewSport
+export default NewTeam
