@@ -7,8 +7,10 @@
 /* eslint-disable */
 import * as React from "react";
 import { useState } from "react";
-import { getOverrideProps, useNavigateAction } from "./utils";
+import { getOverrideProps, useNavigateAction, processFile } from "./utils";
 import { generateClient } from "aws-amplify/api";
+import { Field } from "@aws-amplify/ui-react/internal";
+import { StorageManager } from "@aws-amplify/ui-react-storage";
 import { createTeam } from "../graphql/mutations";
 import {
   Button,
@@ -27,27 +29,27 @@ export default function UINewTeam(props) {
     setTextFieldFourTwoTwoNineEightNineSixValue,
   ] = useState("");
   const [
-    textFieldFourTwoTwoNineEightNineSevenValue,
-    setTextFieldFourTwoTwoNineEightNineSevenValue,
+    imageName,
+    setImageName,
   ] = useState("");
   const [
     textFieldFourTwoTwoNineEightNineEightValue,
     setTextFieldFourTwoTwoNineEightNineEightValue,
   ] = useState("");
   const vectorOnClick = useNavigateAction({ type: "url", url: "/team" });
-  const buttonOnMouseDown = async () => {
+  const buttonOnMouseUp = useNavigateAction({ type: "url", url: "/team" });
+  const buttonOnClick = async () => {
     await client.graphql({
       query: createTeam.replaceAll("__typename", ""),
       variables: {
         input: {
           name: textFieldFourTwoTwoNineEightNineSixValue,
-          image: textFieldFourTwoTwoNineEightNineSevenValue,
+          image: imageName,
           coach: textFieldFourTwoTwoNineEightNineEightValue,
         },
       },
     });
   };
-  const buttonOnMouseUp = useNavigateAction({ type: "url", url: "/team" });
   return (
     <Flex
       gap="16px"
@@ -187,22 +189,27 @@ export default function UINewTeam(props) {
             }}
             {...getOverrideProps(overrides, "TextField4229896")}
           ></TextField>
-          <TextField
-            width="272px"
-            height="unset"
-            label="Image Link"
-            placeholder="http://www.example.com"
-            shrink="0"
-            size="default"
-            isDisabled={false}
-            labelHidden={false}
-            variation="default"
-            value={textFieldFourTwoTwoNineEightNineSevenValue}
-            onChange={(event) => {
-              setTextFieldFourTwoTwoNineEightNineSevenValue(event.target.value);
-            }}
-            {...getOverrideProps(overrides, "TextField4229897")}
-          ></TextField>
+          <Field
+
+label={"Image"}
+isRequired={false}
+isReadOnly={false}
+>
+<StorageManager
+  onUploadSuccess={({ key }) => {
+    setImageName(
+      key
+    );
+  }}
+  processFile={processFile}
+  accessLevel={"public"}
+  acceptedFileTypes={[]}
+  isResumable={false}
+  showThumbnails={true}
+  maxFileCount={1}
+  {...getOverrideProps(overrides, "image")}
+></StorageManager>
+</Field>
           <TextField
             width="272px"
             height="unset"
@@ -251,11 +258,11 @@ export default function UINewTeam(props) {
             isDisabled={false}
             variation="default"
             children="Create"
-            onMouseDown={() => {
-              buttonOnMouseDown();
-            }}
             onMouseUp={() => {
               buttonOnMouseUp();
+            }}
+            onClick={() => {
+              buttonOnClick();
             }}
             {...getOverrideProps(overrides, "Button")}
           ></Button>

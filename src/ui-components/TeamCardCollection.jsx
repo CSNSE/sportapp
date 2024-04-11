@@ -98,9 +98,7 @@ export default function TeamCardCollection(props) {
           }
           return (
             <TeamCard
-              height="auto"
-              width="auto"
-              margin="10px 10px 10px 10px"
+              t={item}
               key={item.id}
               {...(overrideItems && overrideItems({ item, index }))}
             ></TeamCard>

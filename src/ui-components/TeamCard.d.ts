@@ -32,6 +32,8 @@ export declare type TeamCardOverridesProps = {
     "Coach Name"?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;
 export declare type TeamCardProps = React.PropsWithChildren<Partial<FlexProps> & {
+    t?: any;
+} & {
     overrides?: TeamCardOverridesProps | undefined | null;
 }>;
 export default function TeamCard(props: TeamCardProps): React.ReactElement;

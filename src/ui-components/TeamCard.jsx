@@ -6,11 +6,32 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { getOverrideProps } from "./utils";
+import { getOverrideProps, useNavigateAction } from "./utils";
+import { generateClient } from "aws-amplify/api";
+import { deleteTeam } from "../graphql/mutations";
 import { Button, Flex, Image, Text, View } from "@aws-amplify/ui-react";
 import MyIcon from "./MyIcon";
+const client = generateClient();
 export default function TeamCard(props) {
-  const { overrides, ...rest } = props;
+  const { t, overrides, ...rest } = props;
+  const buttonFourTwoTwoFourSevenOneSixOnClick = useNavigateAction({
+    type: "url",
+    url: `${"/editt/"}${t?.id}`,
+  });
+  const buttonFourTwoTwoFourSevenOneSevenOnMouseDown = async () => {
+    await client.graphql({
+      query: deleteTeam.replaceAll("__typename", ""),
+      variables: {
+        input: {
+          id: t?.id,
+        },
+      },
+    });
+  };
+  const buttonFourTwoTwoFourSevenOneSevenOnMouseUp = useNavigateAction({
+    type: "url",
+    url: "/team",
+  });
   return (
     <Flex
       gap="0"
@@ -37,6 +58,7 @@ export default function TeamCard(props) {
         position="relative"
         padding="0px 0px 0px 0px"
         objectFit="cover"
+        src={t?.image}
         {...getOverrideProps(overrides, "image")}
       ></Image>
       <View
@@ -93,6 +115,9 @@ export default function TeamCard(props) {
           size="default"
           isDisabled={false}
           variation="default"
+          onClick={() => {
+            buttonFourTwoTwoFourSevenOneSixOnClick();
+          }}
           {...getOverrideProps(overrides, "Button4224716")}
         ></Button>
         <Button
@@ -105,6 +130,12 @@ export default function TeamCard(props) {
           size="default"
           isDisabled={false}
           variation="default"
+          onMouseDown={() => {
+            buttonFourTwoTwoFourSevenOneSevenOnMouseDown();
+          }}
+          onMouseUp={() => {
+            buttonFourTwoTwoFourSevenOneSevenOnMouseUp();
+          }}
           {...getOverrideProps(overrides, "Button4224717")}
         ></Button>
       </View>
@@ -153,7 +184,7 @@ export default function TeamCard(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children="Team Name"
+            children={t?.name}
             {...getOverrideProps(overrides, "Team Name")}
           ></Text>
           <Text
@@ -176,7 +207,7 @@ export default function TeamCard(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children="Coach Name"
+            children={t?.coach}
             {...getOverrideProps(overrides, "Coach Name")}
           ></Text>
         </Flex>
