@@ -7,8 +7,10 @@
 /* eslint-disable */
 import * as React from "react";
 import { useState } from "react";
-import { getOverrideProps, useNavigateAction } from "./utils";
+import { getOverrideProps, useNavigateAction, processFile } from "./utils";
 import { generateClient } from "aws-amplify/api";
+import { Field } from "@aws-amplify/ui-react/internal";
+import { StorageManager } from "@aws-amplify/ui-react-storage";
 import { createTeam } from "../graphql/mutations";
 import {
   Button,
@@ -187,22 +189,27 @@ export default function UINewTeam(props) {
             }}
             {...getOverrideProps(overrides, "TextField4229896")}
           ></TextField>
-          <TextField
-            width="272px"
-            height="unset"
-            label="Image Link"
-            placeholder="http://www.example.com"
-            shrink="0"
-            size="default"
-            isDisabled={false}
-            labelHidden={false}
-            variation="default"
-            value={textFieldFourTwoTwoNineEightNineSevenValue}
-            onChange={(event) => {
-              setTextFieldFourTwoTwoNineEightNineSevenValue(event.target.value);
-            }}
-            {...getOverrideProps(overrides, "TextField4229897")}
-          ></TextField>
+          <Field
+
+label={"Image"}
+isRequired={false}
+isReadOnly={false}
+>
+<StorageManager
+  onUploadSuccess={({ key }) => {
+    setImageName(
+      key
+    );
+  }}
+  processFile={processFile}
+  accessLevel={"public"}
+  acceptedFileTypes={[]}
+  isResumable={false}
+  showThumbnails={true}
+  maxFileCount={1}
+  {...getOverrideProps(overrides, "image")}
+></StorageManager>
+</Field>
           <TextField
             width="272px"
             height="unset"
