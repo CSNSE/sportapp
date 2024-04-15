@@ -20,8 +20,8 @@ export default function UIEditSport(props) {
   const { overrides, ...rest } = props;
   return (
     <View
-      width="640px"
-      height="1517px"
+      width="627px"
+      height="1581px"
       display="block"
       gap="unset"
       alignItems="unset"
@@ -36,7 +36,7 @@ export default function UIEditSport(props) {
         gap="24px"
         direction="column"
         width="640px"
-        height="1517px"
+        height="1581px"
         justifyContent="flex-start"
         alignItems="flex-start"
         position="absolute"
@@ -123,11 +123,11 @@ export default function UIEditSport(props) {
           alignSelf="stretch"
           size="small"
           orientation="horizontal"
-          {...getOverrideProps(overrides, "Divider41702581")}
+          {...getOverrideProps(overrides, "Divider42611455")}
         ></Divider>
         <View
           width="unset"
-          height="1292px"
+          height="1362px"
           display="block"
           gap="unset"
           alignItems="unset"
@@ -150,7 +150,7 @@ export default function UIEditSport(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            {...getOverrideProps(overrides, "TextField41702583")}
+            {...getOverrideProps(overrides, "TextField42611457")}
           ></TextField>
           <TextField
             width="272px"
@@ -164,7 +164,7 @@ export default function UIEditSport(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            {...getOverrideProps(overrides, "TextField41702589")}
+            {...getOverrideProps(overrides, "TextField42611458")}
           ></TextField>
           <TextField
             width="272px"
@@ -178,7 +178,7 @@ export default function UIEditSport(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            {...getOverrideProps(overrides, "TextField41702585")}
+            {...getOverrideProps(overrides, "TextField42611459")}
           ></TextField>
           <TextField
             width="272px"
@@ -192,7 +192,7 @@ export default function UIEditSport(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            {...getOverrideProps(overrides, "TextField41702584")}
+            {...getOverrideProps(overrides, "TextField42611460")}
           ></TextField>
           <TextField
             width="272px"
@@ -206,7 +206,7 @@ export default function UIEditSport(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            {...getOverrideProps(overrides, "TextField41702587")}
+            {...getOverrideProps(overrides, "TextField42611461")}
           ></TextField>
           <TextField
             width="272px"
@@ -220,7 +220,7 @@ export default function UIEditSport(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            {...getOverrideProps(overrides, "TextField41702588")}
+            {...getOverrideProps(overrides, "TextField42611462")}
           ></TextField>
           <TextField
             width="272px"
@@ -234,7 +234,7 @@ export default function UIEditSport(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            {...getOverrideProps(overrides, "TextField41702590")}
+            {...getOverrideProps(overrides, "TextField42611463")}
           ></TextField>
           <TextField
             width="272px"
@@ -248,7 +248,7 @@ export default function UIEditSport(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            {...getOverrideProps(overrides, "TextField41702586")}
+            {...getOverrideProps(overrides, "TextField42611464")}
           ></TextField>
           <TextField
             width="272px"
@@ -262,7 +262,7 @@ export default function UIEditSport(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            {...getOverrideProps(overrides, "TextField41702591")}
+            {...getOverrideProps(overrides, "TextField42611465")}
           ></TextField>
           <TextField
             width="272px"
@@ -276,7 +276,7 @@ export default function UIEditSport(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            {...getOverrideProps(overrides, "TextField41702592")}
+            {...getOverrideProps(overrides, "TextField42611466")}
           ></TextField>
           <TextField
             width="272px"
@@ -290,7 +290,7 @@ export default function UIEditSport(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            {...getOverrideProps(overrides, "TextField41702593")}
+            {...getOverrideProps(overrides, "TextField42611467")}
           ></TextField>
           <TextField
             width="272px"
@@ -304,7 +304,7 @@ export default function UIEditSport(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            {...getOverrideProps(overrides, "TextField41702594")}
+            {...getOverrideProps(overrides, "TextField42611468")}
           ></TextField>
           <TextField
             width="272px"
@@ -318,7 +318,7 @@ export default function UIEditSport(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            {...getOverrideProps(overrides, "TextField41702595")}
+            {...getOverrideProps(overrides, "TextField42611469")}
           ></TextField>
           <TextField
             width="272px"
@@ -332,7 +332,7 @@ export default function UIEditSport(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            {...getOverrideProps(overrides, "TextField41702596")}
+            {...getOverrideProps(overrides, "TextField42611470")}
           ></TextField>
           <TextField
             width="272px"
@@ -346,7 +346,7 @@ export default function UIEditSport(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            {...getOverrideProps(overrides, "TextField41702597")}
+            {...getOverrideProps(overrides, "TextField42611471")}
           ></TextField>
           <TextField
             width="272px"
@@ -360,7 +360,7 @@ export default function UIEditSport(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            {...getOverrideProps(overrides, "TextField4222567")}
+            {...getOverrideProps(overrides, "TextField42611472")}
           ></TextField>
           <TextField
             width="272px"
@@ -374,7 +374,7 @@ export default function UIEditSport(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            {...getOverrideProps(overrides, "TextField4222574")}
+            {...getOverrideProps(overrides, "TextField42611473")}
           ></TextField>
           <TextField
             width="272px"
@@ -388,7 +388,7 @@ export default function UIEditSport(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            {...getOverrideProps(overrides, "TextField4222581")}
+            {...getOverrideProps(overrides, "TextField42611474")}
           ></TextField>
           <TextField
             width="272px"
@@ -402,7 +402,7 @@ export default function UIEditSport(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            {...getOverrideProps(overrides, "TextField4222588")}
+            {...getOverrideProps(overrides, "TextField42611475")}
           ></TextField>
           <TextField
             width="272px"
@@ -416,7 +416,7 @@ export default function UIEditSport(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            {...getOverrideProps(overrides, "TextField4222595")}
+            {...getOverrideProps(overrides, "TextField42611476")}
           ></TextField>
           <TextField
             width="272px"
@@ -430,7 +430,7 @@ export default function UIEditSport(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            {...getOverrideProps(overrides, "TextField4222602")}
+            {...getOverrideProps(overrides, "TextField42611477")}
           ></TextField>
           <TextField
             width="272px"
@@ -444,7 +444,7 @@ export default function UIEditSport(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            {...getOverrideProps(overrides, "TextField4222609")}
+            {...getOverrideProps(overrides, "TextField42611478")}
           ></TextField>
           <TextField
             width="272px"
@@ -458,7 +458,7 @@ export default function UIEditSport(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            {...getOverrideProps(overrides, "TextField4222616")}
+            {...getOverrideProps(overrides, "TextField42611479")}
           ></TextField>
           <TextField
             width="272px"
@@ -472,7 +472,7 @@ export default function UIEditSport(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            {...getOverrideProps(overrides, "TextField4222623")}
+            {...getOverrideProps(overrides, "TextField42611480")}
           ></TextField>
           <TextField
             width="272px"
@@ -486,7 +486,7 @@ export default function UIEditSport(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            {...getOverrideProps(overrides, "TextField4222630")}
+            {...getOverrideProps(overrides, "TextField42611481")}
           ></TextField>
           <TextField
             width="272px"
@@ -500,7 +500,7 @@ export default function UIEditSport(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            {...getOverrideProps(overrides, "TextField4222644")}
+            {...getOverrideProps(overrides, "TextField42611482")}
           ></TextField>
           <TextField
             width="272px"
@@ -514,7 +514,7 @@ export default function UIEditSport(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            {...getOverrideProps(overrides, "TextField4222651")}
+            {...getOverrideProps(overrides, "TextField42611483")}
           ></TextField>
           <TextField
             width="272px"
@@ -528,7 +528,21 @@ export default function UIEditSport(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            {...getOverrideProps(overrides, "TextField4222658")}
+            {...getOverrideProps(overrides, "TextField42611484")}
+          ></TextField>
+          <TextField
+            width="272px"
+            height="unset"
+            label="Image"
+            position="absolute"
+            top="1275px"
+            left="24px"
+            placeholder=""
+            size="default"
+            isDisabled={false}
+            labelHidden={false}
+            variation="default"
+            {...getOverrideProps(overrides, "TextField42611485")}
           ></TextField>
           <TextField
             width="272px"
@@ -542,7 +556,7 @@ export default function UIEditSport(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            {...getOverrideProps(overrides, "TextField4222665")}
+            {...getOverrideProps(overrides, "TextField42611486")}
           ></TextField>
           <TextField
             width="272px"
@@ -556,7 +570,7 @@ export default function UIEditSport(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            {...getOverrideProps(overrides, "TextField4222637")}
+            {...getOverrideProps(overrides, "TextField42611487")}
           ></TextField>
           <TextField
             width="272px"
@@ -570,7 +584,7 @@ export default function UIEditSport(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            {...getOverrideProps(overrides, "TextField41702598")}
+            {...getOverrideProps(overrides, "TextField42611488")}
           ></TextField>
           <TextField
             width="272px"
@@ -584,7 +598,7 @@ export default function UIEditSport(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            {...getOverrideProps(overrides, "TextField4222560")}
+            {...getOverrideProps(overrides, "TextField42611489")}
           ></TextField>
         </View>
         <Divider
@@ -594,7 +608,7 @@ export default function UIEditSport(props) {
           alignSelf="stretch"
           size="small"
           orientation="horizontal"
-          {...getOverrideProps(overrides, "Divider41702600")}
+          {...getOverrideProps(overrides, "Divider42611490")}
         ></Divider>
         <View
           width="592px"

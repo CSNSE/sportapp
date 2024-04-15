@@ -6,10 +6,11 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { getOverrideProps } from "./utils";
+import { getOverrideProps, useNavigateAction } from "./utils";
 import { Divider, Flex, Icon, Image, Text, View } from "@aws-amplify/ui-react";
 export default function SportCard(props) {
   const { sport, overrides, ...rest } = props;
+  const vectorOnClick = useNavigateAction({ type: "url", url: "/person" });
   return (
     <View
       width="640px"
@@ -83,6 +84,9 @@ export default function SportCard(props) {
               bottom="20.83%"
               left="20.83%"
               right="20.83%"
+              onClick={() => {
+                vectorOnClick();
+              }}
               {...getOverrideProps(overrides, "Vector")}
             ></Icon>
           </View>

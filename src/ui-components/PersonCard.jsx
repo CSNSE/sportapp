@@ -6,10 +6,11 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { getOverrideProps } from "./utils";
+import { getOverrideProps, useNavigateAction } from "./utils";
 import { Flex, Text } from "@aws-amplify/ui-react";
 export default function PersonCard(props) {
   const { overrides, ...rest } = props;
+  const personCardOnClick = useNavigateAction({ type: "url", url: "/card" });
   return (
     <Flex
       gap="12px"
@@ -21,6 +22,9 @@ export default function PersonCard(props) {
       position="relative"
       padding="24px 32px 24px 23px"
       backgroundColor="rgba(255,255,255,1)"
+      onClick={() => {
+        personCardOnClick();
+      }}
       {...getOverrideProps(overrides, "PersonCard")}
       {...rest}
     >
