@@ -1,7 +1,7 @@
 import React, { Component, useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
 import { SportNavBar, UIEditTeam } from "./ui-components";
-import {Storage } from "aws-amplify";
+// import {Storage } from "aws-amplify";
 import { generateClient } from "aws-amplify/api";
 import "./App.css";
 import { getTeam } from "./graphql/queries";

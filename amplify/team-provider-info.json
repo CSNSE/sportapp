@@ -19,7 +19,11 @@
         "sportapp": {}
       },
       "storage": {
-        "imagestorage": {}
+        "imagestorage": {},
+        "sportapp81918059": {
+          "bucketName": "sportapp4cede78f4d934eaca3413cadb2143f3c161819-staging",
+          "region": "us-east-2"
+        }
       }
     }
   }

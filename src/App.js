@@ -18,6 +18,7 @@ class App extends Component {
         <Route exact path='/team' element={<div><SportNavBar/><TeamCardCollection/></div>}/>
         <Route exact path='/newt' element= {<div><NewTeam/></div>} />
         <Route exact path='/newt2' element= {<div><TeamCreateForm/></div>} />
+        <Route exact path='/editt/:cid' element= {<div><EditTeam/></div>} />
         <Route exact path='/edit/:cid' element= {<div><EditSport/></div>} />
       </Routes>
     </header></div>
