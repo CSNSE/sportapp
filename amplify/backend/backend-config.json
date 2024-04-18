@@ -69,11 +69,10 @@
     }
   },
   "storage": {
-    "sportapp81918059": {
+    "imagestorage": {
       "dependsOn": [],
       "providerPlugin": "awscloudformation",
-      "service": "S3",
-      "serviceType": "imported"
+      "service": "S3"
     }
   }
 }
